@@ -1,0 +1,76 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:#4834d4;
+    color: aliceblue;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.campo-digitacao {
+    font-size:20px;
+    height: 130px;
+    border: 4px solid #000;
+}
+.frase {
+    font-size: 20px;
+    text-align: left;
+}
+
+.campo-desativado {
+    background-color: rgb(93, 88, 88);
+}
+
+.icones {
+  vertical-align: middle; 
+}
+
+.title {
+    text-shadow: 6px 4px #000;
+
+}
+
+textarea {
+    box-shadow: 5px 5px #000;
+    background-color:rgb(224, 213, 213);
+    color: #000;
+}
+
+#botao-reiniciar {
+    margin-top:30px;
+}
+
+.campo-correto {
+    border: 3px solid green;
+
+}
+
+.campo-errado {
+    border: 3px solid red;
+}
+
+.border-box {
+    border: 4px solid #000;
+}
+
+.campo-digitacao {
+    font-size: 20px;
+    height: 130px;
+}
+
+.frase {
+    font-size: 20px;
+    text-align: left;
+}
+
+.campo-desativado {
+    background-color: lightgray;
+}
+
+.icones {
+    vertical-align: middle;
+}

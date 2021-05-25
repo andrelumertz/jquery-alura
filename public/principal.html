@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Jquery Typer</title>
+    <link rel="stylesheet" href="./css/libs/materialize.min.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/libs/google-fonts.css">
+    <link rel="stylesheet" href="css/libs/materialize.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1 class=" title center">Jquery Typer</h1>
+    <p class="frase center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptate incidunt sequi a 
+    repellendus quaerat, culpa, vero commodi dolorem, consequuntur sit? Voluptate aspernatur quaerat, soluta dolorum 
+    fugiat illo adipisci veniam.</p>
+    
+    <ul class="informacoes center">
+        <li>
+            <i class="small material-icons icones">descriptions</i>
+            <span id="tamanho-frase">5</span> palavras</li>
+        <li>
+            <i class="small material-icons icones">query_builder</i>
+            <span id="tempo-digitacao">10</span> segundos</li>
+    </ul>
+
+    <textarea class="campo-digitacao" rows="8" cols ="40"></textarea>
+    <div class="botoes">
+        <a class="btn-floating btn-large waves-effect waves-light red" id="botao-reiniciar">
+            <i class="material-icons">restore</i>
+        </a>
+    </div>
+    
+
+    <ul class="center">
+        <li><span id="contador-caracteres">0</span> caracteres</li>
+        <li><span id="contador-palavras">0</span> palavras</li>
+    </ul>
+    </div>
+    
+
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
