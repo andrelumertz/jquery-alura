@@ -74,3 +74,26 @@ textarea {
 .icones {
     vertical-align: middle;
 }
+
+/* CSS da table */
+
+.placar {
+padding:40px;
+}
+
+.placar h3 {
+  padding-bottom: 30px;
+}
+
+
+table {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    margin: 0 auto;align-items: center;
+    max-width:500px;
+}
+
+.sub-title {
+  text-shadow: 4px 4px #000;
+}

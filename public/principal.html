@@ -39,9 +39,35 @@
         <li><span id="contador-palavras">0</span> palavras</li>
     </ul>
     </div>
+
+
+    <section class="placar">
+    <h3 class="center sub-title">Placar</h3>
+        <table class="centered bordered">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>No. de palavras</th>
+                    <th>Remover ?</th>
+                </tr>
+            </thead>
+            <tbody>
+              <tr>
+                  <td>Usuario padrão</td>
+                  <td>999</td>
+                <td> <a href="#" class="botao-remover"> <!-- vamos adicionar um pequeno botão de remover em cada linha da tabela, como uma terceira coluna. Ele será um link representado por um ícone de lixeira, que pegaremos do framework que estamos utilizando para estilizar, o Materialize. Vamos adicioná-lo dentro de um <td>, como uma nova coluna da tabela: -->
+                    <i class="small material-icons">delete</i>
+                </a></td>
+              </tr>
+            </tbody>
+        </table>
+    </section>
+    </div>
     
+
 
     <script src="js/jquery.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/placar.js"></script>
 </body>
 </html>

@@ -1,3 +1,4 @@
+
 var campo = $(".campo-digitacao"); // variavel campo esta pegando a class campo-digitação
 var tempoInicial = $("#tempo-digitacao").text(); 
 
@@ -35,14 +36,19 @@ function inicializaCronometro() {
             tempoRestante--;
             $("#tempo-digitacao").text(tempoRestante);
             if (tempoRestante < 1) {
-                campo.attr("disabled", true);
                 clearInterval(cronometroID);
-                campo.toggleClass("campo-desativado");  // adicionando classe campo-desativado, poderia adicionar tbm pelo toggle class 
+                finalizaJogo();
+               
             }
         }, 1000);
     });
 }
 
+function finalizaJogo() {
+   campo.attr("disabled", true);
+    campo.toggleClass("campo-desativado"); // adicionando classe campo-desativado, poderia adicionar tbm pelo toggle class
+    inserePlacar();
+}
 
 // função para aparecer bordas, ira aparecer borda vermelha se os digitos no input forem diferentes da variavel "comparavel"
 // e verde se forem iguais
@@ -80,54 +86,4 @@ function reiniciaJogo() {
     campo.toggleClass("campo-desativado"); //novo
 };
 
-// var cor = $("div").css("background-color"); -- pegando a cor da div pela função css() e colocando na var cor
-
-// Também é possivel recuperar mais de um valor passando um array de propriedades, por exemplo:
-// var valores = $("div").css(["background-color","width"]);
-
-/*
-Vimos  que podemos facilmente adicionar e remover uma classe com jQuery:
-
-Ao selecionar um elemento:
-
-var campo = $(".campo-digitacao");
-Podemos adicionar a classe desejada através da função .addClass, por exemplo:
-
-campo.addClass("campo-desativado");
-Também podemos remover uma classe:
-
-campo.removeClass("campo-desativado");
-*/ 
-
-/*
-
-Há casos que queremos adicionar uma classe se não existe, e remover se já existe. Qual função devemos utilizar?
-
-A função correta é toggleClass por exemplo:
-
-var campo = $(".campo-digitacao");
-campo.toggleClass("campo-desativado");COPIAR CÓDIGO
-Essa função toggleClass também pode receber um segundo parâmetro que define se quisermos adicionar ou remover a classe:
-
-campo.toggleClass("campo-desativado", true); //sempre adicionaCOPIAR CÓDIGO
-No vídeo você já viu que adicionamos uma borda verde ou vermelha, dependendo se o usuário acertou ou erro:
-
-if(digitado == comparavel) {
-    campo.addClass("borda-verde");
-    campo.removeClass("borda-vermelha");
-} else {
-    campo.addClass("borda-vermelha");
-    campo.removeClass("borda-verde");
-}COPIAR CÓDIGO
-Podemos reescrever esse código sem if, apenas usando o toggleClass. Repare o segundo parâmetro:
-
-var ehCorreto = (digitado == comparavel);
-
-campo.toggleClass("borda-verde", ehCorreto);
-campo.toggleClass("borda-vermelha", !ehCorreto);COPIAR CÓDIGO
-O código fica mais enxuto mas talvez menos legível. De qualquer forma, no curso continuaremos com o if!
-
-$('h1').css('color', 'blue');
-
-*/
 
