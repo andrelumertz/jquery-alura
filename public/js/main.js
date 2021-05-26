@@ -1,6 +1,6 @@
 
 var campo = $(".campo-digitacao"); // variavel campo esta pegando a class campo-digitação
-var tempoInicial = $("#tempo-digitacao").text(); 
+var tempoInicial = $("#tempo-digitacao").text(); // Para imprimirmos exatamente o texto da frase, teremos de utilizar outra função text()
 
 $(function(){  // função de inicialização das funções 
     atualizaTamanhoFrase();
@@ -14,7 +14,7 @@ function atualizaTamanhoFrase() {
     var frase = $(".frase").text();
     var numPalavras = frase.split(" ").length;
     var tamanhoFrase = $("#tamanho-frase");
-    tamanhoFrase.text(numPalavras);
+    tamanhoFrase.text(numPalavras); // atribuindo um valor, pois a função text() esta recebendo um parametro que é numPalavras
 }
 
 function inicializaContadores() {
