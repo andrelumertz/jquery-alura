@@ -9,5 +9,4 @@ if(!db) {
     });
     console.log('Banco ' + dbName + ' pronto para uso')
 }
-
 module.exports = db;
