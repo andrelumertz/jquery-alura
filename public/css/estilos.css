@@ -16,7 +16,6 @@ body {
     margin: 0 auto;
     max-width:50%;
     
-
     font-size:20px;
     height: 130px;
     border: 4px solid #4834d4;
@@ -25,6 +24,10 @@ body {
 .frase {
     font-size: 20px;
     text-align: left;
+}
+
+.container {
+max-width: 50%;
 }
 
 .campo-desativado {
@@ -48,9 +51,18 @@ textarea {
 
 .botoes {
     display: flex;
+    justify-content:center;
     margin: 0 auto;
-    justify-content:center
+    justify-content:center;
+    margin-bottom:40px;
+    
 }
+
+.botoes a {
+    margin-right:20px;
+
+}
+
 #botao-reiniciar {
     margin-top:30px;
 }
